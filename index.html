@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pong</title>
+
+	<!--Removes mobile highlight which may appear when trying
+	to use on mobile, mobile highlight causes the canvas object to get
+	highlighted and thus ignore finger movements -->
+        <style>/* Removes Mobile Highlight */ *{-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}</style>
+
+	<!--load JS files from CreateJS CDN allows the use of any CreateJS
+	functions-->
+        <script src="http://code.createjs.com/easeljs-0.4.2.min.js"></script>
+        <script src="http://code.createjs.com/tweenjs-0.2.0.min.js"></script>
+        <script src="http://code.createjs.com/soundjs-0.2.0.min.js"></script>
+        <script src="http://code.createjs.com/preloadjs-0.1.0.min.js"></script>
+        <script src="http://code.createjs.com/movieclip-0.4.1.min.js"></script>
+	 
+	<!-- Main.js will hold code for the game -->
+        <script src="Main.js"></script>
+
+    </head>
+    <!-- place Canvas object -->
+    <body onload="Main();">
+        <canvas id="PongStage" width="480" height="320"></canvas>
+    </body>
+</html>
